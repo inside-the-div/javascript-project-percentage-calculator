@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/common.css">
+    <link rel="stylesheet" href="../common-assets/css/project-common-css.css">
     <title>Percantage Calculator</title>
 </head>
 <body>
@@ -18,13 +18,13 @@
                     <input id="percentageOf" placeholder="Percentage of" type="number" name="bill" min="0" class="input-feild">
                 </div>
                 <div class="input-group">
-                    <label for="percent" class="input-label">Percent:(%)</label>
+                    <label for="percent" class="input-label">Percent(%):</label>
                     <input id="percentage" placeholder="Percent" type="number" name="tips" min ="0" max="100" class="input-feild">
                 </div>
                 
                 <div class="input-group">
-                    <button id="btnReset" class="btn btn-reset">Reset</button>
-                    <button id="btnCalculate" class="btn btn-calculate">Calculate</button>
+                    <button onclick="PercentageCalculatorReset()" id="btnReset" class="btn btn-reset">Reset</button>
+                    <button onclick="PercentageCalculation()" id="btnCalculate" class="btn btn-calculate">Calculate</button>
                 </div>        
             </div>
 
@@ -48,8 +48,10 @@
             </div>
         </div>
         <div class="author-intro">
-            <p>Develop By <i><a href="#">Kamrul Hasan</a></i> & Powered By <i><a href="#">Bx-Coder</a></i></p>
+            <p>Develop By <i><a href="https://www.linkedin.com/in/kamrul-hasan100" target="_blank">Kamrul Hasan</a></i> & Powered By <i><a href="https://www.insidethediv.com/" target="_blank">InsideTheDiv</a></i></p>
         </div>
-    </div>    
+    </div>
+    <script src="../common-assets/js/project-common-js.js"></script>
+    <script src="jS/percentage-calculator-js.js"></script> 
 </body>
 </html>
