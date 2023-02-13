@@ -47,6 +47,7 @@ function PercentageCalculatorReset()
 {
     document.getElementById("percentageOf").value = "";
     document.getElementById("percentage").value = "";
+    document.getElementById("percentResult").innerHTML = "0.00";
     RemoveAllErrorMessage();
 }
 
