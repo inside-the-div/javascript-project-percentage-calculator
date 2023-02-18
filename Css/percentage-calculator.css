@@ -1,0 +1,43 @@
+.tool-container-feild{
+    width: 75%;
+}
+.tool-input-button-group{
+    display: flex;
+   justify-content: flex-end;
+}
+.tool-input-group{
+    display: flex;
+   border: none;
+}
+.tool-input-feild{
+    width: 110px;
+    
+}
+.tool-percenetage-input-group-divider{
+    width: 100%;
+    margin: 5px;
+    height: 0px;
+    border-bottom: 1px solid rgb(222, 228, 228);
+}
+.tool-input-text-feild{
+    display: inline-flex;
+    position: relative;
+    padding-bottom: 9px;
+}
+@media screen and (max-width: 700px) {
+    .tool-input-group{
+        flex-direction: column;
+    }
+    .tool-input-feild{
+        width: 100%;
+    }
+    .tool-select-group{
+        width: 100%;
+    }
+    .tool-btn-reset{
+        width: 100%;
+    }
+    .tool-btn-calculate{
+        width: 100%;
+    }
+}
