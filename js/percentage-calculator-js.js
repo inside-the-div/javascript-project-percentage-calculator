@@ -1,19 +1,19 @@
 function ValidateCalculatePercentageOfaNumberfeilds()
 {
-    RemoveAllErrorMessage();
+    _cmnRemoveAllErrorMessage();
 
     var percentageOf = document.getElementById("percentageOf").value;
     var percentage = document.getElementById("percentage").value;
     
-    if(IsInputFieldEmpty("percentage") || (isNaN(percentage) && percentage <= 0))
+    if(_cmnIsInputFieldEmpty("percentage") || (isNaN(percentage) && percentage <= 0))
     {
-        ShowErrorMessageBottomOfTheInputFiled("percentage", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("percentage", "Enter a value.");
         return false;
     }  
     
-    if(IsInputFieldEmpty("percentageOf") || (isNaN(percentageOf) && percentageOf <= 0))
+    if(_cmnIsInputFieldEmpty("percentageOf") || (isNaN(percentageOf) && percentageOf <= 0))
     {
-        ShowErrorMessageBottomOfTheInputFiled("percentageOf", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("percentageOf", "Enter correct value.");
         return false;
     }
 
@@ -22,20 +22,20 @@ function ValidateCalculatePercentageOfaNumberfeilds()
 
 function ValidateCalculatePercentageOfTwoNumberfeilds()
 {
-    RemoveAllErrorMessage();
+    _cmnRemoveAllErrorMessage();
 
     var numberOne = document.getElementById("numberOne").value;
     var numberTwo = document.getElementById("percentageOfNumber").value;
     
-    if(IsInputFieldEmpty("numberOne") || (isNaN(numberOne) && numberOne <= 0))
+    if(_cmnIsInputFieldEmpty("numberOne") || (isNaN(numberOne) && numberOne <= 0))
     {
-        ShowErrorMessageBottomOfTheInputFiled("numberOne", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("numberOne", "Enter a value.");
         return false;
     }  
     
-    if(IsInputFieldEmpty("percentageOfNumber") || (isNaN(numberTwo) && numberTwo <= 0))
+    if(_cmnIsInputFieldEmpty("percentageOfNumber") || (isNaN(numberTwo) && numberTwo <= 0))
     {
-        ShowErrorMessageBottomOfTheInputFiled("percentageOfNumber", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("percentageOfNumber", "Enter correct value.");
         return false;
     }
 
@@ -48,7 +48,7 @@ function ResetPercentageInputFeilds()
     document.getElementById("percentage").value = "";
     document.getElementById("percentageOutputResult").value = "";
 
-    RemoveAllErrorMessage();
+    _cmnRemoveAllErrorMessage();
 }
 
 function CalculatePercentageOfaNumber()
@@ -70,7 +70,7 @@ function ResetTwoNumbersPercentageInputFeilds()
     document.getElementById("percentageOfNumber").value = "";
     document.getElementById("percentResult").value = "";
 
-    RemoveAllErrorMessage();
+    _cmnRemoveAllErrorMessage();
 }
 
 function CalculatePercentageOfTwoNumbers()
