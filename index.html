@@ -15,43 +15,43 @@
             <div id="percentageInput" class="tool-container-feild">             
                 
                     <div class="tool-input-group">
-                        <label for="PersantageOf" class="tool-input-label">What&nbspis&nbsp</label>
+                        <label for="topX" class="tool-input-label">What&nbspis&nbsp</label>
                         <div class="tool-input-text-feild">
-                            <input id="percentage" placeholder="X" type="number" min ="0" max="100" class="tool-input-feild">
+                            <input id="topX" placeholder="X" type="number" min ="0" max="100" class="tool-input-feild">
                         </div>                        
-                        <label for="percent" class="tool-input-label">&nbsp%&nbspof&nbsp</label>
+                        <label for="" class="tool-input-label">&nbsp%&nbspof&nbsp</label>
                         <div class="tool-input-text-feild">
-                            <input id="percentageOf" placeholder="Y" type="number"  min="0" class="tool-input-feild">
+                            <input id="topY" placeholder="Y" type="number"  min="0" class="tool-input-feild">
                         </div>
                         <label class="tool-input-label">&nbsp?&nbsp&nbsp=&nbsp</label>
                         <div class="tool-input-text-feild">
-                            <input readonly id="percentageOutputResult" placeholder="output" type="number" class="tool-input-feild">                            
+                            <input readonly id="percentageResultTop" placeholder="output" type="number" class="tool-input-feild">                            
                         </div>
                     </div>
                     <div class="tool-input-button-group">
-                        <button onclick="ResetPercentageInputFeilds()" class="tool-btn tool-btn-reset">Reset</button>
-                        <button onclick="CalculatePercentageOfaNumber()" class="tool-btn tool-btn-calculate">Calculate</button>
+                        <button onclick="ResetTopPercentageFeilds()" class="tool-btn tool-btn-reset">Reset</button>
+                        <button onclick="CalculateTopPercentage()" class="tool-btn tool-btn-calculate">Calculate</button>
                     </div>
                 
                 <div class="tool-percenetage-input-group-divider"></div>
                 
                 <div class="tool-input-group">
                     <div class="tool-input-text-feild">
-                        <input id="numberOne" placeholder="X" type="number"  min ="0" max="100" class="tool-input-feild">                            
+                        <input id="bottomX" placeholder="X" type="number"  min ="0" max="100" class="tool-input-feild">                            
                     </div>
                     <label for="" class="tool-input-label">&nbspIs&nbspwhat&nbsppercenct&nbspof&nbsp</label>
                     <div class="tool-input-text-feild">
-                        <input id="percentageOfNumber" placeholder="Y" type="number" min="0" class="tool-input-feild">
+                        <input id="bottomY" placeholder="Y" type="number" min="0" class="tool-input-feild">
                     </div>
                     <label class="tool-input-label">&nbsp?&nbsp&nbsp=&nbsp</label>
                     <div class="tool-input-text-feild">
-                        <input readonly id="percentResult" placeholder="output" type="number" min="0" class="tool-input-feild">
+                        <input readonly id="percentResultBottom" placeholder="output" type="number" min="0" class="tool-input-feild">
                     </div>
                     <label class="tool-input-label">&nbsp%</label>
                 </div>
                 <div class="tool-input-button-group">
-                    <button onclick="ResetTwoNumbersPercentageInputFeilds()" id="btnResetTwoNumbersPercentageInputFeilds" class="tool-btn tool-btn-reset">Reset</button>
-                    <button onclick="CalculatePercentageOfTwoNumbers()" id="btnCalculatePercentageOfTwoNumbers" class="tool-btn tool-btn-calculate">Calculate</button>
+                    <button onclick="ResetBottomPercentageFeilds()" class="tool-btn tool-btn-reset">Reset</button>
+                    <button onclick="CalculateBottomPercentage()" class="tool-btn tool-btn-calculate">Calculate</button>
                 </div>
                 
             </div>

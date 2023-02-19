@@ -1,19 +1,19 @@
-function ValidateCalculatePercentageOfaNumberfeilds()
+function ValidateCalculateTopPercentagefeilds()
 {
     _cmnRemoveAllErrorMessage();
 
-    var percentageOf = document.getElementById("percentageOf").value;
-    var percentage = document.getElementById("percentage").value;
+    var percentageOf = document.getElementById("topY").value;
+    var percentage = document.getElementById("topX").value;
     
-    if(_cmnIsInputFieldEmpty("percentage") || (isNaN(percentage) && percentage <= 0))
+    if(_cmnIsInputFieldEmpty("topX") || (isNaN(percentage) && percentage <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("percentage", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("topX", "Enter a value.");
         return false;
     }  
     
-    if(_cmnIsInputFieldEmpty("percentageOf") || (isNaN(percentageOf) && percentageOf <= 0))
+    if(_cmnIsInputFieldEmpty("topY") || (isNaN(percentageOf) && percentageOf <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("percentageOf", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("topY", "Enter correct value.");
         return false;
     }
 
@@ -24,64 +24,64 @@ function ValidateCalculatePercentageOfTwoNumberfeilds()
 {
     _cmnRemoveAllErrorMessage();
 
-    var numberOne = document.getElementById("numberOne").value;
-    var numberTwo = document.getElementById("percentageOfNumber").value;
+    var numberOne = document.getElementById("bottomX").value;
+    var numberTwo = document.getElementById("bottomY").value;
     
-    if(_cmnIsInputFieldEmpty("numberOne") || (isNaN(numberOne) && numberOne <= 0))
+    if(_cmnIsInputFieldEmpty("bottomX") || (isNaN(numberOne) && numberOne <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("numberOne", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("bottomX", "Enter a value.");
         return false;
     }  
     
-    if(_cmnIsInputFieldEmpty("percentageOfNumber") || (isNaN(numberTwo) && numberTwo <= 0))
+    if(_cmnIsInputFieldEmpty("bottomY") || (isNaN(numberTwo) && numberTwo <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("percentageOfNumber", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("bottomY", "Enter correct value.");
         return false;
     }
 
     return true;
 }
 
-function ResetPercentageInputFeilds()
+function ResetTopPercentageFeilds()
 {
-    document.getElementById("percentageOf").value = "";
-    document.getElementById("percentage").value = "";
-    document.getElementById("percentageOutputResult").value = "";
+    document.getElementById("topY").value = "";
+    document.getElementById("topX").value = "";
+    document.getElementById("percentageResultTop").value = "";
 
     _cmnRemoveAllErrorMessage();
 }
 
-function CalculatePercentageOfaNumber()
+function CalculateTopPercentage()
 {
-    if(ValidateCalculatePercentageOfaNumberfeilds())
+    if(ValidateCalculateTopPercentagefeilds())
     {
         var result;
-        var percentageOf = Number(document.getElementById("percentageOf").value);
-        var percent = Number(document.getElementById("percentage").value);
+        var percentageOf = Number(document.getElementById("topY").value);
+        var percent = Number(document.getElementById("topX").value);
 
         result = (percentageOf * percent) / 100;
-        document.getElementById("percentageOutputResult").value = Number(result).toFixed(2);
+        document.getElementById("percentageResultTop").value = Number(result).toFixed(2);
     }
 }
 
-function ResetTwoNumbersPercentageInputFeilds()
+function ResetBottomPercentageFeilds()
 {
-    document.getElementById("numberOne").value = "";
-    document.getElementById("percentageOfNumber").value = "";
-    document.getElementById("percentResult").value = "";
+    document.getElementById("bottomX").value = "";
+    document.getElementById("bottomY").value = "";
+    document.getElementById("percentResultBottom").value = "";
 
     _cmnRemoveAllErrorMessage();
 }
 
-function CalculatePercentageOfTwoNumbers()
+function CalculateBottomPercentage()
 {
     if(ValidateCalculatePercentageOfTwoNumberfeilds())
     {
         var result;
-        var numberOne = Number(document.getElementById("numberOne").value);
-        var percentageOfNumber = Number(document.getElementById("percentageOfNumber").value);
+        var numberOne = Number(document.getElementById("bottomX").value);
+        var percentageOfNumber = Number(document.getElementById("bottomY").value);
 
         result = (numberOne / percentageOfNumber) * 100;
-        document.getElementById("percentResult").value = Number(result).toFixed(2);
+        document.getElementById("percentResultBottom").value = Number(result).toFixed(2);
     }
 }
