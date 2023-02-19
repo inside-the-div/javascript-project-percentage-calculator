@@ -7,7 +7,7 @@ function ValidateCalculateTopPercentagefeilds()
     
     if(_cmnIsInputFieldEmpty("topX") || (isNaN(percentage) && percentage <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("topX", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("topX", "Enter correct value.");
         return false;
     }  
     
@@ -29,7 +29,7 @@ function ValidateCalculatePercentageOfTwoNumberfeilds()
     
     if(_cmnIsInputFieldEmpty("bottomX") || (isNaN(numberOne) && numberOne <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("bottomX", "Enter a value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("bottomX", "Enter correct value.");
         return false;
     }  
     
