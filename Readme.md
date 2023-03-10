@@ -1,10 +1,10 @@
-<h1>JavaScript Simple Projects With Source Code - Temperature Converter</h1>
-<p>A JavaScript temperature converter is a program or function that allows users to convert temperatures between different units of measurement using JavaScript programming language. It can be created as a web application or a stand-alone program.
-<a target="_blank" href="https://www.insidethediv.com/javascript-simple-projects-with-source-code-temperature-converter"><b>Read more</b></a>
+<h1>JavaScript Simple Projects With Source Code - Percentage Calculator</h1>
+<p>JavaScript Percentage Calculator is a web-based tool that is built using JavaScript programming language. JavaScript is a popular client-side scripting language that is widely used for creating interactive and dynamic web pages.
+<a target="_blank" href="https://www.insidethediv.com/javascript-simple-projects-with-source-code-percentage-calculator"><b>Read more</b></a>
 </p>
 
 <p>
-A temperature converter is a useful tool that can be used in many different settings. A temperature converter can be a helpful tool in teaching students about different temperature units of measurement and how to convert between them. It can also be used in physics, chemistry, and other science classes to perform calculations that involve temperature.
+Percentage Calculator can be used in various situations. In education, a Percentage Calculator is used to calculate the percentage marks obtained by a student in an exam. In finance, a Percentage Calculator is used to calculate the percentage increase or decrease in the value of an investment.
 You can check this project live <a target="_blank" href="https://toolbot.net/temperature-converter">here</a> .</p>
 
 <p><b>If you are a beginner and want to learn javascript from basic, please check out our other JavaScript Simple Projects With Source Code</b></p>
