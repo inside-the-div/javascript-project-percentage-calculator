@@ -5,7 +5,7 @@
 
 <p>
 Percentage Calculator can be used in various situations. In education, a Percentage Calculator is used to calculate the percentage marks obtained by a student in an exam. In finance, a Percentage Calculator is used to calculate the percentage increase or decrease in the value of an investment.
-You can check this project live <a target="_blank" href="https://toolbot.net/temperature-converter">here</a> .</p>
+You can check this project live <a target="_blank" href="https://toolbot.net/percentage-calculator">here</a> .</p>
 
 <p><b>If you are a beginner and want to learn javascript from basic, please check out our other JavaScript Simple Projects With Source Code</b></p>
 <ul>
