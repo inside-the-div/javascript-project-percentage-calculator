@@ -7,13 +7,13 @@ function ValidateCalculateTopPercentagefeilds()
     
     if(_cmnIsInputFieldEmpty("topX") || (isNaN(percentage) && percentage <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("topX", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("topX", "");
         return false;
     }  
     
     if(_cmnIsInputFieldEmpty("topY") || (isNaN(percentageOf) && percentageOf <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("topY", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("topY", "");
         return false;
     }
 
@@ -29,13 +29,13 @@ function ValidateCalculatePercentageOfTwoNumberfeilds()
     
     if(_cmnIsInputFieldEmpty("bottomX") || (isNaN(numberOne) && numberOne <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("bottomX", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("bottomX", "");
         return false;
     }  
     
     if(_cmnIsInputFieldEmpty("bottomY") || (isNaN(numberTwo) && numberTwo <= 0))
     {
-        _cmnShowErrorMessageBottomOfTheInputFiled("bottomY", "Enter correct value.");
+        _cmnShowErrorMessageBottomOfTheInputFiled("bottomY", "");
         return false;
     }
 
